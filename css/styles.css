@@ -1,0 +1,179 @@
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background: url(../images/body-bg.jpg);
+	color: #3f3f3f
+	text-align: center;
+}
+
+/*font (Hay que convertir la fuente a woff para IE*/
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../fonts/roboto.woff") format("woff"), url("../fonts/roboto.ttf") format("truetype");
+}
+
+*{
+	font-family: Roboto;
+}
+
+#paragraph{
+	text-align: justify;
+	text-justify: auto; /* auto= algoritmo predefinido del buscador*/
+}
+
+#content{
+	width: 80%;
+	text-align: center;
+}
+
+#navegacion, #section #article {
+	border-radius: 3px;
+	margin: 10px;
+}
+
+#navegacion{
+	height: 70px;
+	color: White;
+	background: url(../images/navigation.png);
+	margin: 0px;
+}
+
+#header{
+	height: 220px;
+	background: url(../images/header-bg.jpg);
+	color: White;
+}
+
+#section{
+	background: #ebe9e9;
+	font-size: 30px;
+	color: #3f3f3f;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+
+#article{
+	background: #ffffff;
+	color: #3f3f3f;
+	font-size: 20px;
+	text-align: left;
+	padding: 15px;
+} 
+
+#section, #article{
+	box-shadow: 0px 0px 6px #3f3f3f; /*Horizontal, vertical, difuminacion, color */
+}
+
+#foot{
+	background: #000000;
+	color: #ffffff;
+	opacity: 0.5;
+	clear: both;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+h1{
+	font-size: 70px;
+}
+/*responsive desing */
+@media screen and (max-width: 640px){
+	/*Pantallas menores o igual que 640px*/
+	#content{
+		width: 95%;
+		text-align: center;
+	}
+}
+
+/*Menú navegacion*/
+ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+li{
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	font-size: 25px;
+	/*Transición (Para cada navegador*/
+	transition: 0.3s ease ;
+	-webkit-transition: 0.3s ease ;
+	-moz-transition: 0.3s ease ;
+	-o-transition: 0.3s ease ;
+}
+
+li:hover{
+	transform: scale(1.5); /*El texto aumenta al pasar el cursor*/
+	-webkit-transform: scale(1.5); /*Compatible con Chrome*/
+	background: ;
+}
+
+/*Contacto*/
+
+#contact{
+	padding-left: 30px;
+}
+
+#info_contact{
+	text-align: justify;
+}
+
+#contact_send{
+	padding-left: 30px;
+}
+
+.textbox{
+	background: White;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #DDD inset;
+	color:666;
+	outline: none;
+	height: 30px; width: 275px;
+	padding-left: 5px; padding-right: 2px;
+	font-size: 20px;
+}
+
+.textbox:focus{
+	background: White;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #333 inset;
+	color:666;
+	outline: none;
+	height: 25px; width: 275px;
+	padding-left: 5px; padding-right: 2px;
+}
+
+#send{
+	background: url(../images/send.png); background-repeat: no-repeat;
+	border: 0px;
+	width: 60px; height: 60px;
+
+	transition: 0.3s ease ;
+	-webquit-transition: 0.3s ease ;
+	-moz-transition: 0.3s ease ;
+	-o-transition: 0.3s ease ;
+}
+
+#send:hover{
+	background: url(../images/send-hover.png);
+	border: 0px;
+}
+
+#send:focus{
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+}
