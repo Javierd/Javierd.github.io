@@ -93,7 +93,7 @@ h1{
 
 	li{
 	text-align: center;
-	font-size: 25px;
+	font-size: 15px;
 	/*Transición (Para cada navegador*/
 	transition: 0.3s ease ;
 	-webkit-transition: 0.3s ease ;
