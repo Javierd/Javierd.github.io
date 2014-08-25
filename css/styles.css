@@ -84,11 +84,25 @@ h1{
 	font-size: 70px;
 }
 /*responsive desing */
-@media screen and (max-width: 640px){
-	/*Pantallas menores o igual que 640px*/
+@media screen and (max-width: 800px){
+	/*Pantallas menores o igual que 800px*/
 	#content{
 		width: 95%;
 		text-align: center;
+	}
+
+	li{
+	text-align: center;
+	font-size: 25px;
+	/*Transición (Para cada navegador*/
+	transition: 0.3s ease ;
+	-webkit-transition: 0.3s ease ;
+	-moz-transition: 0.3s ease ;
+	-o-transition: 0.3s ease ;
+	}
+
+	h1{
+	font-size: 40px;
 	}
 }
 
@@ -171,7 +185,7 @@ li:hover{
 	border: 0px;
 }
 
-#send:focus{
+#send:active{
 	transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
