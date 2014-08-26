@@ -41,12 +41,13 @@ body{
 	width: 150px; height: 150px;
 	box-shadow: 0px 0px 6px #000000;
 	float: left;
-	margin-left: 3%; margin-top: -80px;
+	margin-left: 3%; margin-top: -90px;
 }
 
 #header{
 	height: 220px;
 	background: url(../images/header-bg.jpg);
+	margin-bottom: 40px;
 }
 
 #header_links{
