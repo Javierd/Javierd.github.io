@@ -10,16 +10,8 @@ body{
 	text-align: center;
 }
 
-/*font (Hay que convertir la fuente a woff para IE*/
-@font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    src: local("?"), url("../fonts/roboto.woff") format("woff"), url("../fonts/roboto.ttf") format("truetype");
-}
-
 *{
-	font-family: Roboto;
+	font-family: 'source sans pro', sans-serif;
 }
 
 #paragraph{
@@ -55,7 +47,6 @@ body{
 #header{
 	height: 220px;
 	background: url(../images/header-bg.jpg);
-	color: White;
 }
 
 #header_links{
