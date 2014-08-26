@@ -58,6 +58,11 @@ body{
 	color: White;
 }
 
+#header_links{
+	color: White;
+	text-decoration:none;
+}
+
 #section{
 	background: #ebe9e9;
 	font-size: 30px;
