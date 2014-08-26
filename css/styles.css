@@ -83,30 +83,6 @@ body{
 h1{
 	font-size: 70px;
 }
-/*responsive desing */
-@media screen and (max-width: 800px){
-	/*Pantallas menores o igual que 800px*/
-	#content{
-		width: 95%;
-		text-align: center;
-	}
-
-	ul{
-		list-style-type: none;
-		padding-left: 0px;
-	}
-
-	li{
-		text-align: center;
-		padding-left: 10px;
-		padding-right: 10px;
-		font-size: 15px;
-	}
-
-	h1{
-		font-size: 40px;
-	}
-}
 
 /*Menú navegacion*/
 ul{
@@ -137,8 +113,9 @@ li:hover{
 /*Contacto*/
 
 #contact{
-	margin-left: 50%;
+	float: none;
 	width: 50%;
+	padding-left: 50%;
 }
 
 #info_contact{
@@ -191,4 +168,42 @@ li:hover{
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
 	-o-transform: rotate(360deg);
+}
+
+/*responsive desing */
+@media screen and (max-width: 900px){
+	/*Pantallas menores o igual que 800px*/
+	#content{
+		width: 95%;
+		text-align: center;
+	}
+
+	ul{
+		list-style-type: none;
+		padding-left: 0px;
+	}
+
+	li{
+		text-align: center;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 15px;
+	}
+
+	h1{
+		font-size: 40px;
+	}
+
+	#contact{
+		float: none;
+		width: 100%;
+		padding-left: 0px;
+		padding-top: 20px;
+	}
+
+	#info_contact{
+		text-align: justify;
+		width: 100%;
+		float: none;
+	}
 }
