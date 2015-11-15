@@ -88,6 +88,13 @@ footer{
   background-color: #88b131;
 }
 
+#VAOS{
+	color: #797979;
+}
+
+#VAOS:hover{
+	color: #1d1d1d;
+}
 /*CONTACT*/
 #contact_images{
 	padding: 10px;
