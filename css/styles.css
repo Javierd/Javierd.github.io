@@ -133,6 +133,10 @@ h1{
 	font-size: 7vmax;
 }
 
+#mainTitle{
+	font-size: 4vmax;
+}
+
 h2{
 	color: white;
 }
@@ -144,7 +148,7 @@ h2{
 }
 #subtitle{
 	color: #212121;
-	font-size: 30px;
+	font-size: 22px;
 	padding-bottom: 10px; padding-top: 10px;
 	background-color: transparent;
 	text-align: left;
