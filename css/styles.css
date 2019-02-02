@@ -37,7 +37,7 @@ section:hover{
 	font-size: 16px;
 }
 
-#code{
+.code{
 	margin: 10px;
 	padding: 4px;
 	background: #ebebeb;
@@ -55,9 +55,10 @@ footer{
 }
 
 /*PROYECTS*/
-#logo{
+.logo{
   height: 65px;
 }
+
 .btn{
 	padding: 5px 5%;
 	border-radius: 5px;
@@ -88,15 +89,16 @@ footer{
   background-color: #88b131;
 }
 
-#LINK{
+.link{
 	color: #797979;
 }
 
-#LINK:hover{
+.link:hover{
 	color: #1d1d1d;
 }
+
 /*CONTACT*/
-#contact_images{
+.contact_images{
 	padding: 10px;
 	height: 50px; width: 50px;
 	opacity: 0.9;
@@ -106,13 +108,13 @@ footer{
 	-o-transition: 0.3s ease ;
 }
 
-#contact_images:hover{
+.contact_images:hover{
 	opacity: 1;
 	transform: scale(1.2); /*El texto aumenta al pasar el cursor*/
 	-webkit-transform: scale(1.2); /*Compatible con Chrome*/
 }
 
-#contact_images:active{
+.contact_images:active{
 	transform: rotate(360deg);
 	-webkit-transform: rotate(360deg);
 	-moz-transform: rotate(360deg);
@@ -140,20 +142,23 @@ h1{
 h2{
 	color: white;
 }
-#title{
+
+.title{
 	color: #212121;
 	font-size: 40px;
 	padding-bottom: 30px;
 	background-color: transparent;
 }
-#subtitle{
+
+.subtitle{
 	color: #212121;
 	font-size: 22px;
 	padding-bottom: 10px; padding-top: 10px;
 	background-color: transparent;
 	text-align: left;
 }
-#Paragraph{
+
+.paragraph{
 	font-size: 20px;
 	text-align: left;
 	margin-bottom: 10px;
