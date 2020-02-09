@@ -2,12 +2,12 @@
 <html lang="en">
   	<head>
 		<meta charset="utf-8"> <!-- Carácteres españoles -->
-		<link rel=StyleSheet href="css/styles.css" title"propierties" >
+		<link rel=StyleSheet href="css/styles.css" >
 		<title> Javier Delgado </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1>"
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 	    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-	    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,500,700' rel='stylesheet' type='text/css'>
 	    <link href='http://fonts.googleapis.com/css?family=Roboto: 300, 400' rel='stylesheet' type='text/css'>
   	</head>
   	<body>
@@ -20,17 +20,16 @@
 
   			<content> 
   				<section id="information"> 
-  					<article class="title">Information </article>
-  					Hi, my name is Javier Delgado, more known in some forums as Javierd, and I am an computer/programming enthusiast from Spain who was born in 1998.<br> <br>
+  					<div class="title">Information </div>
+  					Born computer scientist and mathematician eager to contribute to team success through hard word, attention to detail and excellent organizational skills. Really good at logical thinking and problem solving. Born in 1998, I've been working with computer-related stuff since I was 13, and I am currently on the fourth course of a joint BSc degree in Computer Science and Mathematics at the Autonomous univeristy of Madrid.<br> <br>
 
-					I am currently studying a double degree on Maths and Computer Engineering at the UAM (Universidad Autónoma de Madrid) while developing my own proyect on <a href="https://explorerbyx.org" target="_blank" class="link"> Explorer </a>, a startup incubator. At the moment, I have worked with several programming languages such as C, Java, Python and bash, I have got some knowledges of android development (ROMs and apps), Linux and Arduino, and a basic handling of Photoshop and web design.<br><br>
 
-					As a demostration of all my knowledges, you have this website that I have build myself from the scratch. You can also see some of the things I've done in the <a href="#projects" class="link">projects</a> section. <br><br>
+					I work on Linux mostly with C, Python and Java, but I have also worked on Android development (both with Java and Flutter), SQL, Bash and Web Design. In case it's needed, I have some basic knowledges of Lisp, Prolog and Photoshop.
   				</section>
 
   				<section id="projects"> 
-  					<article class="title" >Projects</article>
-  					In all the time I've been on the net, I've done lots of things, and here there are the most important. You'll find some stuff on my github's organizations<br><br>
+  					<div class="title" >Projects</div>
+  					Here you can find the most interesting projects I've worked on since my parents gave me my first laptop at 14 years old.<br><br>
   					<center>
 						<a href="https://github.com/Javierd" target="_blank"><button class="btn github"><img github src="./images/Github.png" class="logo"></button></a>
 						<a href="https://www.youtube.com/channel/UCS-QNupgbcpNulmb0AwnvBA" target="_blank"><button class="btn youtube"><img src="./images/Youtube.png" class="logo"></button></a>
@@ -38,47 +37,112 @@
 						<a href="https://play.google.com/store/apps/developer?id=Javierd" target="_blank"><button class="btn store"><img src="./images/Playstore.png" class="logo" ></button></a><br>
 					</center>
 					<br><br>
-					PS: You can also take a look at some of my college notes <a href="./degree.html" class="link">here</a>.
-  				</section>
+					PS: You can also take a look at some of my college notes <a href="./degree.html" class="link">here</a>, and every code-related assignment I've done on my degree is available <a href="https://github.com/Javierd-Degree" class="link">here</a>.
 
-				<section id="IIFYM"> 
-  					<article class="title" style="padding-bottom: 8px;">IIFYM</article>
-  			
-  					<center><img src="https://github.com/Javierd/Images/raw/master/iifym_banner.png" style='height: 100%; width: 100%; object-fit: contain'></center><br>
-					<b>IIFYM is an Android app that allows you to track all your eaten foods and your weight in order to achieve faster a fittest and healthier body.</b><br><br>
-					Every food is composed of three major macronutrients, carbohydrates, proteins and fats, which are essential for our body. This application will calculate the necessary amount of each macronutrient depending on your gender, age, height, weight and level of physical activity, and you'll be able to record all of your meals (by looking them up on the internet or creating them), in order to achieve your fitness goals, and significantly improve your health.
-					<br><br>
-					It will also allow you to keep a record of your weight and body fat percentage, attaching photos of your physical state, visible only from the app, to easily observe and share your progress.
-					<br><br>
-					And finally, it also has a social component, allowing you to share animations of your progress and the goals you achieve thanks to this app.
-					<br><br>
-					You can download the app <a href="https://play.google.com/store/apps/details?id=com.javierd.iifym" target="_blank" class="link">here</a>
-					<br><br>
-  				</section>
+	  				<div class="timeline">
+						<div class="timeline-item" date-is='2017/09 - 2018/06'>
 
-  				<section id="VAOS"> 
-  					<article class="title">VAOS</article>
-					<b><a href="http://vaosproject.github.io/" target="_blank" id="LINK">VAOS</a> is an Open Source Virtual Assistant based in python that I developed back in 2015, with just 17 years.</b>
-					<br><br>
-					<center>
-						<div class="embed-container">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/cfCZ4JY2S0Y" frameborder="0" allowfullscreen></iframe>
+							<div class="card">
+								<div class="timeline-item-title">NightLive</div>
+			  					<b>Python server and Android app with real time location to help people find trendy places to party according to different parameters, and help places' owners to understand their clients' tastes and improve their business.</b>
+
+								<div class="subtitle">How the idea came up</div>
+								I'm sure everyone has been somewhen on the situation when you want to party with your friends but every pub/disco you visit is empty or doesn't fit your musical taste. NightLive app pretended to solve that problem by registering your real-time location and showing nearby places with an indicator of how full it is. Once you clicked on a place, you could see some information about it, some flyers the place owner could create, etc.
+
+								<br><br>
+								The place's owner could use a web service to register it and, using a monthly suscription, get anonymous information about its clients (age, sex, favorite music genres) and about others places' clients. That way, the owner could make his local more atractive to his target public, and pay for adversiment inside the application.
+
+								<div class="subtitle">Problems I had to solve</div>
+								I had never worked with web servers before, and I needed one to store the users, places and business data so that they where accesible worldwide, so I finally went with Flask. Once the project was pretty much working, I used <a href="https://www.pythonanywhere.com" class="link">PythonAnywhere</a> to deploy it (I also tried Heroku, but it gave me less computation power for free, and an ugliest URL).
+								<br><br>
+
+								As the application needed a database of places, and a map to be showed, I used Google Maps API, along with Clustering algorithms to group people near the party places.
+
+
+								<div class="subtitle">Why the project ended</div>
+								At mid 2018 the app and the server were working pretty good and with some minor UI improvements I would say I had a MVP, but there were some problems that made me throw away the idea of putting it on the market:
+								<br><br>
+								<ul>
+									<li>
+										An iOS app would have been necessary too, and at that moment I didn't knew amything about Flutter or React.
+									</li>
+									<li>
+										If I wanted the app to be successfull, I would have to convince some places' owners to add flyers on the app (in exchange for some free month of use) so that people would download and use it.
+									</li>
+									<li>
+										I would have to enter in legal territory by creating a company etc, and as a 19 years old student, I didn't have any knowledge or time to research about it not to mention I couldn't afford any kind of gestor.
+									</li>
+									<li>
+										The Android 8.0 update put some restrictions on real time location access, so once that version was distributed, the app may become unusable depending on the user configuration.
+									</li>
+									<li>
+										Finally, as I mentioned before, the app used Google Maps API to display a map with nearby places, and somewhen in 2018 Google put some cuota limits on that API, so I needed money to release the app.
+									</li>
+								</ul>
+
+							</div>
 						</div>
-					</center>
-					<br><br>
-  				</section>
+						
+						<div class="timeline-item" date-is='2016/06 - 2017/12'>
+							<div class="card">
+								<div class="timeline-item-title">IIFYM</div>
+			  			
+			  					<center><img src="https://github.com/Javierd/Images/raw/master/iifym_banner.png" style='height: 100%; width: 100%; object-fit: contain'></center><br>
+								<b>IIFYM is an Android app that allows you to track all your eaten foods and your weight in order to achieve faster a fittest and healthier body.</b><br><br>
+								Every food is composed of three major macronutrients, carbohydrates, proteins and fats, which are essential for our body. This application will calculate the necessary amount of each macronutrient depending on your gender, age, height, weight and level of physical activity, and you'll be able to record all of your meals (by looking them up on the internet or creating them), in order to achieve your fitness goals, and significantly improve your health.
+								<br><br>
+								It will also allow you to keep a record of your weight and body fat percentage, attaching photos of your physical state, visible only from the app, to easily observe and share your progress.
+								<br><br>
+								And finally, it also has a social component, allowing you to share animations of your progress and the goals you achieve thanks to this app.
+								<br><br>
+								You can download the app <a href="https://play.google.com/store/apps/details?id=com.javierd.iifym" target="_blank" class="link">here</a>
+
+								<div class="subtitle">How the idea came up</div>
+								I have always loved well-designed user interfaces. In 2015 I started going to the gym, and after some months of solid training, I was thinking about improving my diet. There are lots of android applications that lets you track everything you eat, the most important ones being MyFitnessPal and FatSecret. Both of them have a really unintuitive user interface so I decided to make my on application and upload it to Google Play.
+
+
+								<div class="subtitle">Problems I had to solve</div>
+								This was my first serious android app. I had done some really simple applications previously, but I had never learned any programming language (just a bit of Arguino on my High School), not to mention anything related with databases or object oriented languages.<br><br>
+
+								There was a bigger problem anyway: in order to have a successfull food app, you need a huge database, and that is really hard to get. Although I tried webscrapping and some others morally dubious methods, I finally had to use a third-part database, and I ended up using FatSecret's one. They let me use the PREMIER Free version, which had only english food, so I had to use Yandex Translation API in order to have a worldwide usefull aplication. That decision made the app slower, and created a ceil on the number of users, as the free Yandex API key has daily and monthly limits.
+
+
+								<div class="subtitle">Why the project ended</div>
+								On the second course of my degree, I learned a lot about databases and object oriented languaged, and I discovered that the entire model my app was working arround was a complete mess. I didn't have much time and the project wasn't of my interest anymore, so I decided to keep it like that and try to fix the common problems, so that people could still use it.<br><br>
+
+								At the start of 2019, I though it would be cool to update the app interface to the new material design guidelines and implement some features people have asked me, for example, a calendar. I worked on it and there are some changes update to the repository, but as I had the idea of ScreenWeb, I couldn't finish it.
+							</div>
+						</div>
+						
+						<div class="timeline-item" date-is='2015/01 - 2015/07'>
+							<div class="card">
+								<div class="timeline-item-title">VAOS</div>
+
+								<b><a href="http://vaosproject.github.io/" target="_blank" id="LINK" class="link">VAOS</a> is an Open Source Virtual Assistant based in python that I developed back in 2015, with just 17 years.</b>
+								<br><br>
+
+								It made use of a hacky Google stt API, with multiple options for the tts, so it may not work nowadays. It also implement pushbullet notifications to get the information directly on your phone.
+								<br><br>
+
+								<center>
+									<div class="embed-container">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/cfCZ4JY2S0Y" frameborder="0" allowfullscreen></iframe>
+									</div>
+								</center>
+							</div>
+						</div>
+					</div>
+
+				</section>
 
   			</content>
 
   			<footer>
-  				<h2>Contact</h2> 
+  				<h2 id="contact-title">Contact</h2> 
 				If you want/have to tell me something, you have any doubt about my work, or you just want to talk with me, you can do it by this ways:
 				<div id="contact">
 					<a href="https://twitter.com/Javier_D98" target="_blank"><img src="./images/Twitter.png" class="contact_images"></a>
 					<a href="https://www.instagram.com/Javier_D98/" target="_blank"><img src="./images/Instagram.png" class="contact_images"></a>
-					<a href="https://plus.google.com/+JavierDelgado98" target="_blank"><img src="./images/GPlus.png" class="contact_images"></a>
-					<a href="https://plus.google.com/communities/106450323676409627540" target="_blank"><img src="./images/Community.png" class="contact_images"></a>
-			     	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EDVWNMDU2R8W" target="_blank"><img src="./images/Paypal.png" class="contact_images"></a>
 					<a href="mailto:Javierd299@gmail.com" target="_blank"><img src="./images/Email.png" class="contact_images"></a>
 				</div>
 

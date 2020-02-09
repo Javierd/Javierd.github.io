@@ -4,37 +4,45 @@ Main color: #3F51B5;*/
 *{
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Roboto', sans-serif; font-size: 20px;
-	text-align: center; text-decoration: none; color: #161616;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none; color: #161616;
 }
 
 body{background-color: #ebebeb; }
 
-header{ 
+header{
+	text-align: center;
 	padding-top: 42px; padding-bottom: 30px;
 	background-color: #212121;
 }
 
+
 section{
+	text-align: justify;
+ 	margin-left: 10%; margin-right: 10%; margin-top: 40px;
+ 	max-width: max(1024px, 50%);
+}
+
+.card{
  	text-align: justify;
  	margin-left: 10%; margin-right: 10%; margin-top: 40px;
- 	padding: 5%; padding-top: 3%; padding-bottom: 2%;
+ 	padding: 5%; padding-top: 3%; padding-bottom: 5%;
+
  	background-color: #FFF; 
  	box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.05), 0 6px 7px 0 rgba(0, 0, 0, 0.05);
  	transition: all 400ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
 }
 
-section:hover{
+.card:hover{
 	box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
 
-#information{
-	margin-top: -40px;
-}
 
-#Assistant{
-	margin-top: -40px;
-	font-size: 16px;
+.card{
+ 	margin-left: 0%; margin-right: 0%; margin-top: 0px;
+ 	padding: max(5%, 48px);
+ 	padding-top: 3%;
+ 	padding-bottom: 5%;
 }
 
 .code{
@@ -50,8 +58,8 @@ footer{
 	color: #ffffff;
 	clear: both;
 	padding: 15px;
-	font-size: 20px;
-	margin-top: 20px;
+	font-size: 1.3em;
+	margin-top: 1.3em;
 }
 
 /*PROYECTS*/
@@ -123,12 +131,13 @@ footer{
 
 /*TEXT*/
 h1{ 
-	font-size: 60px;
+	font-size: 5em;
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 300; 
 	background-color: transparent; 
 	color: white; 
 	padding-bottom: 42px;
+	text-align: center;
 }
 
 #name{
@@ -139,29 +148,114 @@ h1{
 	font-size: 4vmax;
 }
 
-h2{
-	color: white;
+.title{
+	color: #303030;
+	font-size: 3em;
+	font-weight: 700;
+	text-align: center;
+	padding-bottom: 30px;
+
+	display: grid;
+	align-items: center;
+	grid-gap: 20px;
+    width: 100%;
+	grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
 }
 
-.title{
-	color: #212121;
-	font-size: 40px;
-	padding-bottom: 30px;
-	background-color: transparent;
+.title::before, .title::after {
+    content: '';
+    border: 1px solid;
+    border-image: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0));
+    border-image-slice: 1;
 }
+
+.title::after {
+    content: '';
+    border: 1px solid;
+    border-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.3) 90%, rgba(0,0,0,0));
+    border-image-slice: 1;
+}
+
 
 .subtitle{
-	color: #212121;
-	font-size: 22px;
+	color: #303030;
+	font-size: 1.5em;
+	font-weight: 700;
 	padding-bottom: 10px; padding-top: 10px;
 	background-color: transparent;
 	text-align: left;
+	padding-top: 30px;
 }
 
 .paragraph{
 	font-size: 20px;
 	text-align: left;
 	margin-bottom: 10px;
+}
+
+li{
+	text-align: justify;
+	margin-bottom: 12px;
+	margin-left: 24px;
+}
+
+#contact-title{
+	color: white;
+}
+
+
+/*Timeline*/
+.timeline-item {
+	padding-top: 3em;
+	padding-bottom: 2em;
+	padding-left: 2em;
+	position: relative;
+	border-left: 2px solid rgba(0,0,0,0.3);
+}
+
+.timeline-item::before {
+	content: attr(date-is);
+	color: rgba(0,0,0,0.8);
+	position: absolute;
+	left: 2em;
+	font-weight: bold;
+	top: 1em;
+	display: block;
+	font-weight: 700;
+	font-size: .785rem;
+}
+
+.timeline-item::after {
+	width: 11px;
+	height: 11px;
+	display: block;
+	top: 1em;
+	position: absolute;
+	left: -8px;
+	border-radius: 10px;
+	content: '';
+	border: 2px solid rgba(0,0,0,0.3);
+	background: white;
+}
+
+.timeline-item:first-child {
+	margin-top: 20px;
+	border-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 10%);
+	border-image-slice: 1;
+}
+
+.timeline-item:last-child {
+	border-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0) 100%);
+	border-image-slice: 1;
+}
+
+.timeline-item-title{
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 2em;
+	font-weight: 700;
+	text-align: left;
+	padding-bottom: 8px;
+	background-color: transparent;
 }
 
 /*Video*/
@@ -178,4 +272,16 @@ h2{
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+	section{
+	 	margin-left: 16px; margin-right: 16px;
+	}
+
+	.timeline-item {
+		padding-left: 10px;
+	}
 }
